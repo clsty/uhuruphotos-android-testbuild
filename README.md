@@ -7,7 +7,7 @@ See [official repo](https://github.com/savvasdalkitsis/uhuruphotos-android) for 
 This is a **non-official** repo, not related with uhuruphotos-android.
 
 Also note that I **don't** know about android developing (at least for now),
-don't take my instructions here too seriously (although I'll try to write as better as I can).
+don't take my instructions here too seriously (although I'll try to write it better).
 
 I created this repo for notes and backup about building and translation (localization) thingy.
 
@@ -18,9 +18,9 @@ The official provides a link to [weblate](https://hosted.weblate.org/engage/uhur
 
 Also, the localization file is actually at `foundation/strings/api/src/main/res/values*` inside the git repo.
 
-You may download those files packed as zip from weblate once you've down translations, or edit the file directly.
+You may download those files packed as zip from weblate once you've done translations, or edit the file directly.
 
-## sync entries
+## Sync entries
 Ideally, the strings of the original file and the translated file should be automatically synchronized, but in practice, there may be differences.
 
 Here's a stupid way to synchronize them mannually.
@@ -90,16 +90,13 @@ sdkmanager --list|grep 34|grep "build-tools\|platforms"
 ```
 Example output:
 ```plain
-build-tools;34.0.0                 | 34.0.0     | Android SDK Build-Tools 34              | build-tools/34.0.0                
-build-tools;34.0.0-rc3             | 34.0.0 rc3 | Android SDK Build-Tools 34-rc3          | build-tools/34.0.0-rc3            
-platforms;android-34               | 2          | Android SDK Platform 34                 | platforms/android-34              
-build-tools;34.0.0                                                                       | 34.0.0        | Android SDK Build-Tools 34                                          
-build-tools;34.0.0-rc1                                                                   | 34.0.0 rc1    | Android SDK Build-Tools 34-rc1                                      
-build-tools;34.0.0-rc2                                                                   | 34.0.0 rc2    | Android SDK Build-Tools 34-rc2                                      
-build-tools;34.0.0-rc3                                                                   | 34.0.0 rc3    | Android SDK Build-Tools 34-rc3                                      
-platforms;android-34                                                                     | 2             | Android SDK Platform 34                                             
-platforms;android-34-ext10                                                               | 1             | Android SDK Platform 34-ext10                                       
-platforms;android-34-ext8                                                                | 1             | Android SDK Platform 34-ext8   
+build-tools;34.0.0           | 34.0.0      | Android SDK Build-Tools 34                                          
+build-tools;34.0.0-rc1       | 34.0.0 rc1  | Android SDK Build-Tools 34-rc1                                      
+build-tools;34.0.0-rc2       | 34.0.0 rc2  | Android SDK Build-Tools 34-rc2                                      
+build-tools;34.0.0-rc3       | 34.0.0 rc3  | Android SDK Build-Tools 34-rc3                                      
+platforms;android-34         | 2           | Android SDK Platform 34                                             
+platforms;android-34-ext10   | 1           | Android SDK Platform 34-ext10                                       
+platforms;android-34-ext8    | 1           | Android SDK Platform 34-ext8   
 ```
 So we need to install:
 ```bash
