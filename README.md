@@ -12,6 +12,7 @@ don't take my instructions here too seriously (although I'll try to write it bet
 I created this repo for notes and backup about building and translation (localization) thingy.
 
 I've also [forked](https://github.com/clsty/uhuruphotos-android) the official repo when I tested building.
+You may find the result apk file [there](https://github.com/clsty/uhuruphotos-android/releases).
 
 # How to translate
 The official provides a link to [weblate](https://hosted.weblate.org/engage/uhuruphotos/), where you can contribute translation online.
