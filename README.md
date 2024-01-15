@@ -181,3 +181,12 @@ cd /xxx/uhuruphotos-android/feature/feed/domain/implementation/build/intermediat
 cp -r compileDebugJavaWithJavac/classes classes
 ```
 And that's it! As I built again, it worked!
+
+# Extra notes
+To setup a LibrePhotos server, if you use docker, it may not create an admin account for you automatically.
+If this happened, you may do:
+```bash
+c(){docker exec -ti backend python manage.py $@ ; }
+c createsuperuser
+```
+Also `c --help` to see a list of available commands.
